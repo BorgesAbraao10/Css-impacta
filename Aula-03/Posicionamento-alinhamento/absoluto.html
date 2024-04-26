@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      header {
+        background: #66a7e7;
+        width: 500px;
+        height: auto;
+        /*top right botton left*/
+        padding: 10px 0px 20px 10px; /*Padding representa espaçamento interno*/
+      }
+
+      section {
+        background: #ccc;
+        width: 500px;
+        height: 500px;
+        margin: 20px 40px;
+        padding: 30px;
+      }
+
+      article {
+        width: 400px;
+        height: 500px;
+        background-color: #fff;
+        position: relative;
+      }
+
+      article div {
+        position: fixed;
+        left: 0px;
+        top: 200px;
+      }
+
+      article img {
+        width: 350px;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+      }
+
+      article div img {
+        width: 40px;
+        height: 40px;
+        display: block;
+        position: static;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      Trabalhando com CSS3
+      <br />
+      Posicionando e Alinhando Conteúdo
+    </header>
+    <section>
+      <article>
+        <div>
+          <img src="img/facebook.png" alt="" />
+          <img src="img/instagram.png" alt="" />
+          <img src="img/twitter.png" alt="" />
+          <img src="img/whatsapp.png" alt="" />
+        </div>
+        <p>Conteúdo do primeiro parágrafo</p>
+        <img src="img/0066_PAL_Photo.png" alt="" />
+      </article>
+    </section>
+  </body>
+</html>

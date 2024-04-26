@@ -1,0 +1,44 @@
+<!--Seletor checked-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      header {
+        font: 30px Verdana;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      input[id="sim"]:checked ~ label[for="sim"] {
+        color: rgb(5, 119, 158);
+        font-weight: bold;
+      }
+
+      input[id="nao"]:checked ~ label[for="nao"] {
+        color: red;
+        font-weight: bold;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>Pesquisa de satisfação:</header>
+    <section>
+      <article>
+        <p>Você ama a sogra da sua mulher?</p>
+        <form action="">
+          <input type="radio" id="sim" name="escolha" />
+          <label for="sim">Sim</label>
+
+          <input type="radio" id="nao" name="escolha" />
+          <label for="nao">Não</label>
+        </form>
+      </article>
+    </section>
+  </body>
+</html>

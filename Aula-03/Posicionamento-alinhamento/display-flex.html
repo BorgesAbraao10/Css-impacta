@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      header {
+        background: #66a7e7;
+        width: 500px;
+        height: auto;
+        /*top right botton left*/
+        padding: 10px; /*Padding representa espaçamento interno*/
+      }
+
+      section {
+        background: #ccc;
+        margin: 20px 100px;
+        padding: 30px;
+      }
+
+      article {
+        background-color: #fff;
+        padding: 10px;
+      }
+      #grupo-01 {
+        display: flex;
+        flex-direction: row;
+        height: 450px;
+        border: 2px solid #000;
+        align-items: stretch;
+      }
+      #grupo-01 div {
+        width: 200px;
+        min-height: 120px;
+        background: orange;
+        margin: 8px;
+      }
+      #grupo-01 div:nth-child(2) {
+        min-height: 180px;
+      }
+      #grupo-01 div:nth-child(3) {
+        min-height: 280px;
+      }
+      #grupo-01 div:nth-child(4) {
+        min-height: 130px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      Trabalhando com CSS3
+      <br />
+      Posicionando e Alinhando Conteúdo
+    </header>
+    <section>
+      <article>
+        <p>Conteúdo do primeiro parágrafo</p>
+
+        <div id="grupo-01">
+          <div>A</div>
+          <div>B</div>
+          <div>C</div>
+          <div>D</div>
+        </div>
+
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. In ullam
+          doloribus, eveniet, accusantium pariatur ea aliquid beatae corrupti
+          consequatur, minima laudantium? Reprehenderit vel dolores rerum, sed
+          pariatur quam magnam at.
+        </p>
+      </article>
+    </section>
+  </body>
+</html>
